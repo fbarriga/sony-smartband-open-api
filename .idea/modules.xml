@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DebugApp/DebugApp.iml" filepath="$PROJECT_DIR$/DebugApp/DebugApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RawBandLogger/RawBandLogger.iml" filepath="$PROJECT_DIR$/RawBandLogger/RawBandLogger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SonySmartBandOpenAPI/SonySmartBandOpenAPI.iml" filepath="$PROJECT_DIR$/SonySmartBandOpenAPI/SonySmartBandOpenAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sony-smartband-open-api.iml" filepath="$PROJECT_DIR$/sony-smartband-open-api.iml" />
+    </modules>
+  </component>
+</project>
