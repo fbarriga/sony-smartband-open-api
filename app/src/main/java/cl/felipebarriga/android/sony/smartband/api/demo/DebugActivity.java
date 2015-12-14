@@ -20,6 +20,7 @@ import cl.felipebarriga.android.sony.smartband.api.bluetooth.BtBand;
 import cl.felipebarriga.android.sony.smartband.api.bluetooth.BtBandEvent;
 import cl.felipebarriga.android.sony.smartband.api.bluetooth.BtBandListener;
 import cl.felipebarriga.android.sony.smartband.api.bluetooth.BtBridge;
+import cl.felipebarriga.android.sony.smartband.api.rawband.R;
 
 /**
  * Copyright (c) 2015 Felipe Barriga Richards. See Copyright Notice in LICENSE file.

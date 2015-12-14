@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/linearLayout1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView_2"
+                    android:src="@mipmap/ic_bluetooth"/>
+
+
+                <Switch
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Connected to SmartBand"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/connect_switch"
+                    android:checked="false"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/imageView_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Disconnected"
+                    android:id="@+id/textView11"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/connect_switch"
+                    android:layout_toEndOf="@+id/imageView_2"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView_1"
+                    android:src="@mipmap/ic_record"/>
+
+
+                <Switch
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recording"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/record_switch"
+                    android:checked="false"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/imageView_1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="smartband_log_123123123.csv"
+                    android:id="@+id/textView21"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/record_switch"
+                    android:layout_toEndOf="@+id/imageView_1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView_3"
+                    android:src="@mipmap/ic_battery"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Battery Level"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView_3"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="100%"
+                    android:id="@+id/textView"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/textView2"
+                    android:layout_toEndOf="@+id/imageView_3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:src="@mipmap/ic_steps"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Records"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="12012"
+                    android:id="@+id/textView6"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/textView5"
+                    android:layout_toEndOf="@+id/imageView2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@mipmap/ic_stopwatch"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Elapsed Time"
+                    android:id="@+id/textView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="1200 seconds"
+                    android:id="@+id/textView8"
+                    android:paddingLeft="5dp"
+                    android:layout_below="@+id/textView7"
+                    android:layout_toEndOf="@+id/imageView3"/>
+
+            </RelativeLayout>
+
+            <com.androidplot.xy.XYPlot
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:id="@+id/view"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
