@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sony-smartband-open-api__.iml" filepath="$PROJECT_DIR$/sony-smartband-open-api__.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sony-smartband-open-api.iml" filepath="$PROJECT_DIR$/sony-smartband-open-api.iml" />
     </modules>
   </component>
 </project>
