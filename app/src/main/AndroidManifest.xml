@@ -7,12 +7,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 
-    <uses-feature
-        android:name="android.hardware.bluetooth"
-        android:required="false"/>
-    <uses-feature
-        android:name="android.hardware.bluetooth_le"
-        android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -31,56 +27,4 @@
             </intent-filter>
         </activity>
     </application>
-
-
-    <service android:name=".BtService" />
-    <receiver
-        android:name=".EventReceiver"
-        android:enabled="true">
-        <intent-filter>
-            <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.intent.action.TIME_SET"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.intent.action.DATE_CHANGED"/>
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-        <intent-filter>
-            <action android:name="android.bluetooth.headset.action.VENDOR_SPECIFIC_HEADSET_EVENT"/>
-            <category android:name="android.bluetooth.headset.intent.category.companyid.85"/>
-        </intent-filter>
-    </receiver>
-
 </manifest>
