@@ -1,1 +1,3 @@
-include ':app'
+include ':SonySmartBandOpenAPI'
+include ':DebugApp'
+include ':RawBandLogger'
